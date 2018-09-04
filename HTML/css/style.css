@@ -38,13 +38,13 @@ Author:Denis Samardjiev
     =Media Queries
 */
 
-@import url(https://fonts.googleapis.com/css?family=Roboto:700,400,300,100|Montserrat:400,700);
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
 
 /* =Common Styles
 -------------------------------------------------------------- */
 body {
 	background-color: #1d1d1d;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Yanone Kaffeesatz', sans-serif !important;
 	font-size: 18px;
 	font-weight: 300;
     padding-top: 69px;
