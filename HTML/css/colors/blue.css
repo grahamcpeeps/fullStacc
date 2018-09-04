@@ -8,18 +8,18 @@ span.divider {
     background-color: #3498db;
 }
 
-textarea:hover, 
-input:hover, 
-textarea:active, 
-input:active, 
-textarea:focus, 
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
 input:focus,
 button:focus,
 button:active,
 button:hover,
 #contact .form-control:focus,
-#contact .form-control:hover, 
-#contact .form-control:active { 
+#contact .form-control:hover,
+#contact .form-control:active {
     border-color: #3498db;
 }
 
@@ -60,6 +60,7 @@ ul.list-arrow-2-color li:before {
 ul.list-arrow-color li:before {
     color: #3498db;
 }
+
 
 /* =Buttons
 -------------------------------------------------------------- */
@@ -191,7 +192,7 @@ a.thumbnail.active, a.thumbnail:focus, a.thumbnail:hover {
 
 /* =Services
 -------------------------------------------------------------- */
-.services-icon { 
+.services-icon {
     font-size: 40px;
     color: #3498db;
 }
@@ -215,7 +216,7 @@ a.thumbnail.active, a.thumbnail:focus, a.thumbnail:hover {
 /* =Team
 -------------------------------------------------------------- */
 .team-image-wrapper .team-image-hover {
-	background-color: rgba(52, 152, 219, 0.75); 
+	background-color: rgba(52, 152, 219, 0.75);
 }
 
 /* =Work
