@@ -45,7 +45,7 @@ Author:Denis Samardjiev
 -------------------------------------------------------------- */
 body {
 	background-color: #1d1d1d;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
 	font-size: 18px;
 	font-weight: 300;
     padding-top: 69px;
@@ -996,7 +996,7 @@ ul.social-buttons li a:active {
 .jumbotron.jumbotron-main {
 	height: 100%;
 	width: 100%;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
 	color: #fff;
 	padding-top: 0;
 	padding-bottom: 0;
@@ -1070,7 +1070,7 @@ ul.social-buttons li a:active {
 .jumbotron.jumbotron-register {
     height: 100%;
     width: 100%;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
     color: #fff;
     padding-top: 0;
     padding-bottom: 0;
@@ -1111,7 +1111,7 @@ ul.social-buttons li a:active {
 }
 
 #hello-intro h3 {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
 	font-weight: 100;
 	font-size: 25px;
 	color: #b0b0b0;
@@ -1651,7 +1651,7 @@ span.portfolio-hover a {
 }
 
 .plan li.plan-name {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
 	font-weight: 100;
 	padding: 15px;
 	font-size: 24px;
