@@ -38,13 +38,13 @@ Author:Denis Samardjiev
     =Media Queries
 */
 
-
+<<<<<<< HEAD
 @import url(https://fonts.googleapis.com/css?family=Roboto:700,400,300,100|Montserrat:400,700);
 =======
 @import url('https://fonts.googleapis.com/css?family=Roboto:700,400,300,100|Montserrat:400,700');
 @import url('https://fonts.googleapis.com/css?family=Rubik');
 @import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
-
+>>>>>>> 98ea172a2f2c2984928504a8b159f3babee6fc2f
 
 
 /* =Common Styles
