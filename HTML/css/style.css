@@ -501,14 +501,14 @@ button:hover,
 }
 
 .progress-bar {
-	font-size: 13px;
+	font-size: 16px;
     background-color: #8980fe;
     box-shadow: none;
     border-radius: 11px;
     line-height: 18px;
     padding-left: 6px;
     text-align: left;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 .progress-meter {
