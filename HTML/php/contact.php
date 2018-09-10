@@ -1,4 +1,10 @@
 <?php
+header("Content-type:application/json");
+header("Access-Control-Allow-Origin: *");
+
+$ret['status'] = 1;
+echo json_encode($ret);
+
 
 $errorMSG = "";
 
