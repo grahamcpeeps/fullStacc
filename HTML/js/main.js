@@ -24,6 +24,7 @@ $("#contactForm").validator().on("submit", function(event) {
         submitForm();
     }
 });
+
 function submitForm() {
     // Initiate Variables With Form Content
     var name = $("#name").val();
