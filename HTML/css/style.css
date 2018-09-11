@@ -47,6 +47,10 @@ Author:Denis Samardjiev
 
 /* =Common Styles
 -------------------------------------------------------------- */
+
+.alert{
+	/* display: none; */
+}
 body {
 	background-color: #1d1d1d;
 	font-family: 'Yanone Kaffeesatz', sans-serif;
