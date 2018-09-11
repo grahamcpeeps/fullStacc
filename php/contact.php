@@ -36,7 +36,13 @@ if (empty($_POST["message"])) {
     $message = $_POST["message"];
 }
 
-$EmailTo = "graham7724@gmail.com";
+$recipients = array(
+  "grahamcpeeps@gmail.com",
+  "akash.kadakia1999@gmail.com"
+  // more emails
+);
+$EmailTo = implode(',', $recipients);
+
 $Subject = "New Message Received";
 
 // prepare email body text
