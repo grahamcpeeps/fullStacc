@@ -63,8 +63,12 @@ $Body .= "Message: ";
 $Body .= $message;
 $Body .= "\n";
 
+
+
 // send email
 $success = mail($EmailTo, $Subject, $Body, "From:".$email);
+$success = mail($email,"fullStacc. Customer Service", "Thank You for reaching out to us. We will contact you as soon as possible.","From:"."fullStacc.");
+
 
 // redirect to success page
 if ($success && $errorMSG == ""){
