@@ -16,16 +16,18 @@ $('.process-box').hover(function() {
 
 /* ---- contact form ---- */
 $("#contactForm").validator().on("submit", function(event) {
-  // alert("hi");
-  $(".alert").css('display','block');
+
     if (event.isDefaultPrevented()) {
         formError();
         submitMSG(false, "Did you fill in the form properly?");
     } else {
-        $("#contactSuccess").alert();
+
 
         event.preventDefault();
         submitForm();
+        $("#contactForm")[0].reset();
+    	submitMSG(true, "Message Submitted!")
+
     }
 });
 
@@ -42,7 +44,8 @@ function submitForm() {
             msg_subject + "&message=" + message,
         success: function(text) {
             if (text == "success") {
-                formSuccess();
+                $("#contactForm")[0].reset();
+    		submitMSG(true, "Message Submitted!")
             } else {
                 formError();
                 submitMSG(false, text);
@@ -93,8 +96,7 @@ $('.popup-img').magnificPopup({
 /* ---- popup video ---- */
 $(document).ready(function() {
 
-    // $("#contactSuccess").hide();
-    $(".alert").hide();
+
     $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
         disableOn: 700,
         type: 'iframe',
