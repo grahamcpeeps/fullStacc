@@ -25,8 +25,7 @@ $("#contactForm").validator().on("submit", function(event) {
 
         event.preventDefault();
         submitForm();
-        $("#contactForm")[0].reset();
-    	submitMSG(true, "Message Submitted!")
+
 
     }
 });
