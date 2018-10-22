@@ -205,10 +205,26 @@
 
 
 
+<<<<<<< HEAD
   $("verify").on("click", function(){
+=======
+  $("#verify").on("click",function(){
+>>>>>>> 7f2d25f994300647cecd8410a467917841727195
 
 	  $.getJSON('/source/db.json', function(data) {
-	  		/*optional stuff to do after success */
+	  	
+				let foundUser = false;
+
+
+				for(i=0;i<data.clients.length;i++){
+					if(data.clients[i].username === FORMDATA && data.clients[i].password === FORMDATA){
+						foundUser = true;
+					}
+				}
+
+				if(foundUser){
+					$("#pay").prop('disabled', false);
+				}
 	  });
 
     $("#amount").attr("value","2000");
@@ -217,10 +233,7 @@
 
   $(document).ready(function() {
      $("#pay").prop('disabled', true);
-     $("#verify").on("click",function(){
-       $("#pay").prop('disabled', false);
-       // $(this).prop('disabled', true);
-     });
+
 
  });
 
