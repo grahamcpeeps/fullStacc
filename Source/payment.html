@@ -72,6 +72,7 @@
 
 							<li><a href="index.html#services" data-id="services">Services</a></li>
 							<li><a href="index.html#about" data-id="about">Team</a></li>
+							
 							<li><a href="index.html#work" data-id="work">Portfolio</a></li>
 							<li><a href="index.html#team" data-id="team">Pricing</a></li>
 							<li><a href="index.html#contact" data-id="contact">Contact</a></li>
@@ -110,31 +111,13 @@
                             <div class="form-group">
                                 <input type="password" class="form-control" placeholder="Password" required="required">
                             </div>
-                      
+
                             <div class="form-group no-margin-bottom mt20">
                               <button type="button"  id="verify" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Verify ID</button>
                             </div>
                         </form>
 
-                        <form role="form" id="register_form" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 
-                                      <input type="hidden" name="cmd" value="_xclick">
-                                      <input type="hidden" name="business" value="7VZ5JD4X86NGY">
-                                      <input type="hidden" name="lc" value="US">
-                                      <input type="hidden" name="button_subtype" value="services">
-
-                                      <input type="hidden" name="cn" value="Add special instructions to the seller:">
-                                      <input type="hidden" name="no_shipping" value="2">
-                                      <input type="hidden" name="no_shipping" value="2">
-                                      <input type="hidden" name="currency_code" value="USD">
-                                      <input type="hidden" id="name" name="item_name" value="manticore Website">
-                                      <input type="hidden" id="amount" name="amount" value="300">
-                                      <input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHosted">
-                                      <div class="form-group no-margin-bottom mt20">
-                                          <input id="pay" type="submit" class="btn btn-primary" border="0" name="submit" value="Pay Now">
-
-                                      </div>
-                                  </form>
                                 </div>
 
 
@@ -162,17 +145,43 @@
           <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                <h2 class="modal-title" id="exampleModalLongTitle">Manticore Fuels: ID Verified</h2>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
               <div class="modal-body">
-                ...
-              </div>
+                <p> Cogratulations! You are now one step away from taking ownership of your brand new website</p>
+								<p> Click the following "Pay Now" button. You will then be redirected to a checkout screen. After checking out, your project directory will automatically start downloading</p>
+								<br>
+								<p><strong>Project Details:</strong></p>
+								<p>Start Date: <span id="startDate"></p>
+								<p>End Date: </p>
+								<p>Hours worked: </p>
+								<p>Hourly Rate: $50</p>
+								<p>Total Cost: $50</p>
+
+							</div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+								<form role="form" id="register_form" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+
+															<input type="hidden" name="cmd" value="_xclick">
+															<input type="hidden" name="business" value="7VZ5JD4X86NGY">
+															<input type="hidden" name="lc" value="US">
+															<input type="hidden" name="button_subtype" value="services">
+
+															<input type="hidden" name="cn" value="Add special instructions to the seller:">
+															<input type="hidden" name="no_shipping" value="2">
+															<input type="hidden" name="no_shipping" value="2">
+															<input type="hidden" name="currency_code" value="USD">
+															<input type="hidden" id="name" name="item_name" value="manticore Website">
+															<input type="hidden" id="amount" name="amount" value="300">
+															<input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHosted">
+															<div class="form-group no-margin-bottom mt20">
+																	<input id="pay" type="submit" class="btn btn-primary" border="0" name="submit" value="Pay Now">
+
+															</div>
+													</form>
               </div>
             </div>
           </div>
@@ -201,7 +210,6 @@
 
   $(document).ready(function() {
      $("#pay").prop('disabled', true);
-
      $("#verify").on("click",function(){
        $("#pay").prop('disabled', false);
        // $(this).prop('disabled', true);
