@@ -6,6 +6,7 @@
 	<title>fullStacc.</title>
 	<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
 
+
 	<!-- Royal Preloader CSS -->
 	<link href="css/royal_preloader.css" rel="stylesheet">
 
@@ -72,7 +73,7 @@
 
 							<li><a href="index.html#services" data-id="services">Services</a></li>
 							<li><a href="index.html#about" data-id="about">Team</a></li>
-							
+
 							<li><a href="index.html#work" data-id="work">Portfolio</a></li>
 							<li><a href="index.html#team" data-id="team">Pricing</a></li>
 							<li><a href="index.html#contact" data-id="contact">Contact</a></li>
@@ -203,7 +204,15 @@
   <script>
 
 
+<<<<<<< HEAD
+  $("verify").on("click",function(){
+	
+=======
   $(document).ready(function(){
+	  $.getJSON('/source/db.json', function(data) {
+	  		/*optional stuff to do after success */
+	  });
+>>>>>>> 4634ec039c84c6679e9db6164d5f60828b832c67
     $("#amount").attr("value","2000");
     $("#name").attr("value","Akash");
   });
