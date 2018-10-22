@@ -72,7 +72,7 @@
 
 							<li><a href="index.html#services" data-id="services">Services</a></li>
 							<li><a href="index.html#about" data-id="about">Team</a></li>
-							
+
 							<li><a href="index.html#work" data-id="work">Portfolio</a></li>
 							<li><a href="index.html#team" data-id="team">Pricing</a></li>
 							<li><a href="index.html#contact" data-id="contact">Contact</a></li>
@@ -204,6 +204,9 @@
 
 
   $(document).ready(function(){
+	  $.$.getJSON('/source/db.json', function(data) {
+	  		/*optional stuff to do after success */
+	  });
     $("#amount").attr("value","2000");
     $("#name").attr("value","Akash");
   });
